@@ -1,0 +1,88 @@
+body {
+    font-family:'Lato', sans-serif;;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h1  {
+    text-align: center;
+    font-size: 62px;
+    color: #26272D;
+    margin-bottom: 40px;
+}
+h2  {
+    font-size: 42px;
+}
+h3  {
+    font-size: 26px;
+    font-weight: 300;
+    color: #26272D;
+}
+p   {
+    color: #8C8F94;
+}
+
+.btn  {
+    border-radius: 35px;
+}
+.btn-outline-light    {
+    color: #26272D;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+
+
+.section-one    {
+    height: 100%;
+    overflow: hidden;
+    padding-top: 202px;
+    background-image: url(../../img/banner_background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    p {
+        text-align: center;
+    }
+    .btn-outline-light  {
+        padding: 19px 48px;
+        margin-top: 61px;
+        margin-bottom: 55px;
+    }
+    .font-icon  {
+        margin-right: 15px;
+    }
+    .buttton-section-one    {
+        text-align: center;
+    }
+    .iphone {
+        text-align: center;
+    }
+    .img-section-one    {
+        position: relative;
+        top: 300px;
+    }
+}
+
+// секция 2
+
+.section-two    {
+    padding-top: 125px;
+    padding-bottom: 169px;
+    h3 {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    .font-icon  {
+        color: #00BFFF;
+    }
+}
+
+// секция 3
+
+.section-three  {
+    .img-section-three  {
+        position: relative;
+        right: 450px;
+    }
+}
