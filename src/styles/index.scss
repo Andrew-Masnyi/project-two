@@ -22,6 +22,9 @@ h4  {
     font-size: 32px;
     color: #26272D;
 }
+h5  {
+    font-size: 30px;
+}
 h6  {
     font-size: 12px;
 }
@@ -203,4 +206,35 @@ p   {
 // секция 6 конец
 
 // секция 7 старт
+
+.section-seven  {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    .slider {
+        .slick-list {
+            text-align: -webkit-center;
+            border-color: transparent;
+            .slick-track    {
+                .slick-slide    {
+                    &:focus {
+                        outline: none;
+                    }
+                    img {
+                        border-radius: 70px;
+                    }
+                }
+            }
+        }
+    }
+    .text-slider    {
+        .slick-list {
+            text-align: -webkit-center;
+            .slick-track    {
+        .slick-slide    {
+            outline: none;
+        }
+            }
+        }
+    }
+}
 
