@@ -1,52 +1,50 @@
 body {
-    font-family:'Lato', sans-serif;;
+    font-family: "Lato", sans-serif;
     font-size: 20px;
     font-weight: 400;
 }
 
-h1  {
+h1 {
     text-align: center;
     font-size: 62px;
-    color: #26272D;
+    color: #26272d;
     margin-bottom: 40px;
 }
-h2  {
+h2 {
     font-size: 42px;
 }
-h3  {
+h3 {
     font-size: 26px;
     font-weight: 300;
-    color: #26272D;
+    color: #26272d;
 }
-h4  {
+h4 {
     font-size: 32px;
-    color: #26272D;
+    color: #26272d;
 }
-h5  {
+h5 {
     font-size: 30px;
 }
-h6  {
+h6 {
     font-size: 12px;
 }
-p   {
-    color: #8C8F94;
+p {
+    color: #8c8f94;
 }
 
-.btn  {
+.btn {
     border-radius: 35px;
 }
-.btn-outline-light    {
-    color: #26272D;
+.btn-outline-light {
+    color: #26272d;
     border-width: 1px;
     border-color: #000000;
 }
 
-
-
-.section-one    {
+.section-one {
     height: 100%;
     overflow: hidden;
-    padding-top: 202px;
+    padding-top: 127px;
     background-image: url(../../img/banner_background.jpg);
     background-size: cover;
     background-position: bottom;
@@ -54,21 +52,21 @@ p   {
     p {
         text-align: center;
     }
-    .btn-outline-light  {
+    .btn-outline-light {
         padding: 19px 48px;
         margin-top: 61px;
         margin-bottom: 55px;
     }
-    .font-icon  {
+    .font-icon {
         margin-right: 15px;
     }
-    .buttton-section-one    {
+    .buttton-section-one {
         text-align: center;
     }
     .iphone {
         text-align: center;
     }
-    .img-section-one    {
+    .img-section-one {
         position: relative;
         top: 300px;
     }
@@ -76,38 +74,38 @@ p   {
 
 // секция 2
 
-.section-two    {
+.section-two {
     padding-top: 125px;
     padding-bottom: 169px;
     h3 {
         margin-top: 45px;
         margin-bottom: 45px;
     }
-    .font-icon  {
-        color: #00BFFF;
+    .font-icon {
+        color: #00bfff;
     }
 }
 
 // секция 3
 
-.section-three  {
+.section-three {
     padding-top: 87px;
     padding-bottom: 43px;
-    .img-section-three  {
+    .img-section-three {
         position: relative;
         right: 450px;
     }
-    .btn-primary    {
+    .btn-primary {
         padding-top: 15px;
         padding-bottom: 13px;
         padding-left: 27px;
         padding-right: 19px;
         margin-right: 18px;
-        .fa-arrow-right{
+        .fa-arrow-right {
             margin-left: 48px;
         }
     }
-    .btn-outline-light  {
+    .btn-outline-light {
         padding: 15px 30px 13px 34px;
     }
 }
@@ -116,7 +114,7 @@ p   {
 
 // секция 4 старт
 
-.section-four   {
+.section-four {
     padding-top: 207px;
     padding-bottom: 199px;
     h2 {
@@ -128,9 +126,9 @@ p   {
     h6 {
         margin-bottom: 31px;
     }
-    .partner-icon   {
+    .partner-icon {
         margin-right: 31px;
-        &:last-child    {
+        &:last-child {
             margin-right: 0;
         }
     }
@@ -140,26 +138,26 @@ p   {
 
 // секция 5
 
-.section-five   {
+.section-five {
     padding-top: 142px;
     padding-bottom: 124px;
-    background-color: #F5F5F8;
+    background-color: #f5f5f8;
     hr {
-        background-color: #267DF4;
+        background-color: #267df4;
         margin-top: 46px;
         margin-bottom: 43px;
     }
     h6 {
-        color: #8C8F94;
+        color: #8c8f94;
         margin-bottom: 46px;
         letter-spacing: 3px;
     }
-    .interface  {
+    .interface {
         text-align: center;
     }
-    .interface-img  {
+    .interface-img {
         margin-right: 30px;
-        &:last-child    {
+        &:last-child {
             margin-right: 0;
         }
     }
@@ -169,33 +167,34 @@ p   {
 
 // секция 6
 
-.section-six    {
+.section-six {
     padding-top: 76px;
     padding-bottom: 142px;
-    background-color: #F5F5F8;
-    .app, .app-one    {
+    background-color: #f5f5f8;
+    .app,
+    .app-one {
         text-align: center;
     }
     h2 {
         margin-bottom: 45px;
     }
     h6 {
-        color: #3A3D4B;
+        color: #3a3d4b;
         letter-spacing: 3px;
         margin-bottom: 37px;
     }
-    span   {
+    span {
         margin-bottom: 67px;
         p {
             border: solid;
             border-width: 1px;
             border-radius: 35px;
-            border-color:	#E8E8E8;
+            border-color: #e8e8e8;
             padding: 8px 4px 8px 28px;
             margin-bottom: 0;
         }
     }
-    .btn    {
+    .btn {
         margin-left: 132px;
         padding: 15px 24px 15px 32px;
         .fa-arrow-right {
@@ -207,15 +206,45 @@ p   {
 
 // секция 7 старт
 
-.section-seven  {
-    margin-top: 200px;
-    margin-bottom: 200px;
+.section-seven {
+    padding-top: 119px;
+    padding-bottom: 129px;
     .slider {
+        position: relative;
+        padding: 0px 60px;
+        margin-bottom: 75px;
+        .slick-arrow {
+            font-size: 0;
+            height: 50px;
+            width: 40px;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: none;
+        }
+        .slick-prev {
+            position: relative;
+            top: 100px;
+            right: 130px;
+            background-image: url(../../img/left-arrow.png);
+            &:focus    {
+                outline: none;
+            }
+
+        }
+        .slick-next {
+            position: relative;
+            bottom: 90px;
+            left: 500px;
+            background-image: url(../../img/right-arrow.png);
+            &:focus    {
+                outline: none;
+            }
+        }
         .slick-list {
             text-align: -webkit-center;
             border-color: transparent;
-            .slick-track    {
-                .slick-slide    {
+            .slick-track {
+                .slick-slide {
                     &:focus {
                         outline: none;
                     }
@@ -226,15 +255,108 @@ p   {
             }
         }
     }
-    .text-slider    {
+    .text-slider {
+        h5 {
+            margin-bottom: 48px;
+        }
+        p  {
+            margin-bottom: 29px;
+        }
+        h6 {
+            margin-top: 68px;
+        }
         .slick-list {
             text-align: -webkit-center;
-            .slick-track    {
-        .slick-slide    {
-            outline: none;
-        }
+            .slick-track {
+                .slick-slide {
+                    outline: none;
+                }
             }
         }
     }
 }
+// секция 7 конец
 
+// секция 8 старт
+
+.section-eight  {
+    padding-top: 159px;
+    padding-bottom: 193px;
+    background-color: #F4F4F5;
+    h2 {
+        color: #26272D;
+        margin-bottom: 67px;
+    }
+    h6 {
+        font-weight: 600;
+        margin-bottom: 23px;
+    }
+    p {
+        margin-bottom: 44px;
+        &.link  {
+            margin-bottom: 0;
+        }
+    }
+    .toggle {
+        display: inline-block;
+        box-sizing: content-box;
+        text-align: center;
+        padding: 20px 20px 20px 20px;
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 50px;
+        a {
+            font-size: 16px;
+            margin-right: 10px;
+            color: 	#DCDCDC;
+            &:active    {
+                color: #000000;
+                background-color: #FFFFFF;
+                padding: 20px 36px 16px 36px;
+                border-radius: 50px;
+            }
+            &:last-child    {
+                margin-right: 0;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .starter  {
+        position: relative;
+        text-align: center;
+        background-color: #FFFFFF;
+        width: 350px;
+        .starter-in {
+            padding-top: 63px;
+            padding-bottom: 70px;
+            h4 {
+                margin-bottom: 38px;
+            }
+            p {
+                margin-bottom: 47px;
+            }
+            .btn    {
+                margin-top: 61px;
+            }
+        }
+    }
+    .pro  {
+        position: relative;
+        left: 65px;
+        text-align: center;
+        padding-top: 50px;
+        width: 350px;
+        .pro-in {
+            background-color: #EBEBED;
+        }
+    }
+    .price  {
+        margin-bottom: 56px;
+    }
+    .check  {
+        font-size: 16px;
+        margin-bottom: 27px;
+    }
+}
