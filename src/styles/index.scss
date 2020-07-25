@@ -309,6 +309,88 @@ header {
 
 // секция 8 старт
 
+// .section-eight  {
+//     padding-top: 159px;
+//     padding-bottom: 193px;
+//     background-color: #F4F4F5;
+//     h2 {
+//         color: #26272D;
+//         margin-bottom: 67px;
+//     }
+//     h6 {
+//         font-weight: 600;
+//         margin-bottom: 23px;
+//     }
+//     p {
+//         margin-bottom: 44px;
+//         &.link  {
+//             margin-bottom: 0;
+//         }
+//     }
+//     .toggle {
+//         display: inline-block;
+//         box-sizing: content-box;
+//         text-align: center;
+//         padding: 20px 20px 20px 20px;
+//         width: 50%;
+//         border: 1px solid black;
+//         border-radius: 50px;
+//         a {
+//             font-size: 16px;
+//             margin-right: 10px;
+//             color: 	#DCDCDC;
+//             &:active    {
+//                 color: #000000;
+//                 background-color: #FFFFFF;
+//                 padding: 20px 36px 16px 36px;
+//                 border-radius: 50px;
+//             }
+//             &:last-child    {
+//                 margin-right: 0;
+//             }
+//             &:hover {
+//                 text-decoration: none;
+//             }
+//         }
+//     }
+//     .starter  {
+//         position: relative;
+//         text-align: center;
+//         background-color: #FFFFFF;
+//         width: 350px;
+//         .starter-in {
+//             padding-top: 63px;
+//             padding-bottom: 70px;
+//             h4 {
+//                 margin-bottom: 38px;
+//             }
+//             p {
+//                 margin-bottom: 47px;
+//             }
+//             .btn    {
+//                 margin-top: 61px;
+//             }
+//         }
+//     }
+//     .pro  {
+//         position: relative;
+//         left: 65px;
+//         text-align: center;
+//         padding-top: 50px;
+//         width: 350px;
+//         .pro-in {
+//             background-color: #EBEBED;
+//         }
+//     }
+//     .price  {
+//         margin-bottom: 56px;
+//     }
+//     .check  {
+//         font-size: 16px;
+//         margin-bottom: 27px;
+//     }
+// }
+
 .section-eight  {
     padding-top: 159px;
     padding-bottom: 193px;
@@ -328,30 +410,42 @@ header {
         }
     }
     .toggle {
-        display: inline-block;
         box-sizing: content-box;
         text-align: center;
         padding: 20px 20px 20px 20px;
-        width: 50%;
+        width: 60%;
         border: 1px solid black;
         border-radius: 50px;
         a {
-            font-size: 16px;
             margin-right: 10px;
-            color: 	#DCDCDC;
-            &:active    {
-                color: #000000;
-                background-color: #FFFFFF;
-                padding: 20px 36px 16px 36px;
-                border-radius: 50px;
-            }
             &:last-child    {
-                margin-right: 0;
-            }
-            &:hover {
-                text-decoration: none;
+                margin: 0;
             }
         }
+        .nav-item {
+            .nav-link   {
+                display: inline;
+                font-size: 16px;
+                color: 	#DCDCDC;
+                &:hover {
+                    border: transparent;
+                }
+                &.active    {
+                    color: #000000;
+                    background-color: #FFFFFF;
+                    padding: 20px 36px 16px 36px;
+                    border: none;
+                    border-radius: 50px;
+                }
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .fa-check   {
+        color: #6FC754;
+        margin-right: 10px;
     }
     .starter  {
         position: relative;
@@ -365,10 +459,11 @@ header {
                 margin-bottom: 38px;
             }
             p {
-                margin-bottom: 47px;
+                margin-bottom: 30px;
             }
             .btn    {
                 margin-top: 61px;
+                width: 50%;
             }
         }
     }
@@ -376,10 +471,19 @@ header {
         position: relative;
         left: 65px;
         text-align: center;
-        padding-top: 50px;
+        padding-top: 20px;
         width: 350px;
         .pro-in {
             background-color: #EBEBED;
+            padding-top: 44px;
+            padding-bottom: 51px;
+            .btn    {
+                margin-top: 36px;
+                width: 50%;
+            }
+            p {
+                margin-bottom: 30px;
+            }
         }
     }
     .price  {
@@ -395,7 +499,7 @@ header {
 .section-nine   {
     padding-top: 90px;
     padding-bottom: 86px;
-    background-color: #F5F5F8;
+    background-color: #FFFFFF;
     h2  {
         margin-bottom: 48px;
     }
@@ -459,6 +563,7 @@ header {
         }
     }
 }
+
 
 footer  {
     padding-top: 26px;
