@@ -1,5 +1,10 @@
+$primary-font-family: 'Varela Round', sans-serif;
+$secondary-font-family: 'Lato', sans-serif;
+html, body  {
+    height: 100%;
+}
 body {
-    font-family: "Lato", sans-serif;
+    font-family: $secondary-font-family;
     font-size: 20px;
     font-weight: 400;
 }
@@ -9,9 +14,11 @@ h1 {
     font-size: 62px;
     color: #26272d;
     margin-bottom: 40px;
+    font-family: $primary-font-family;
 }
 h2 {
     font-size: 42px;
+    font-family: $primary-font-family;
 }
 h3 {
     font-size: 26px;
@@ -57,13 +64,27 @@ header {
                     }
                 }
                 .logo {
-                    margin-left: 241px;
-                    margin-right: 224px;
+                    margin-left: 210px;
+                    margin-right: 175px;
                 }
                 .btn    {
                     padding: 7px 24px 4px 24px;
                     .fa {
                         margin-right: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:992px) {
+    header  {
+        .navbar {
+            .navbar-collapse    {
+                .navbar-nav {
+                    .logo   {
+                        margin-left: 150px;
+                        margin-right: 125px;
                     }
                 }
             }
@@ -97,12 +118,25 @@ header {
         text-align: center;
     }
     .img-section-one {
-        position: relative;
-        top: 300px;
+        margin-top: 290px;
+    }
+}
+@media(min-width: 992px)    {
+    .section-one    {
+        .img-section-one    {
+            margin-top: -1%;
+        }
+    }
+}
+@media(min-width: 1920px)   {
+    .section-one    {
+        .img-section-one    {
+            margin-top: 27%;
+        }
     }
 }
 
-// секция 2
+// section 2
 
 .section-two {
     padding-top: 125px;
@@ -113,14 +147,21 @@ header {
     }
     .font-icon {
         color: #00bfff;
+        font-size: 3rem;
     }
 }
 
-// секция 3
+// section 3
 
 .section-three {
     padding-top: 87px;
     padding-bottom: 43px;
+    h2 {
+        margin-bottom: 60px;
+    }
+    p {
+        margin-bottom: 60px;
+    }
     .img-section-three {
         position: relative;
         right: 450px;
@@ -130,7 +171,6 @@ header {
         padding-bottom: 13px;
         padding-left: 27px;
         padding-right: 19px;
-        margin-right: 18px;
         .fa-arrow-right {
             margin-left: 48px;
         }
@@ -139,14 +179,45 @@ header {
         padding: 15px 30px 13px 34px;
     }
 }
+@media(min-width: 992px)    {
+    .section-three  {
+        .img-section-three  {
+            height: 600px;
+            position: absolute;
+            right: -60px;
+            bottom: -140px;
+        }
+        .btn-primary    {
+            margin: 0;
+        }
+    }
+}
+@media(min-width: 1920px)   {
+    .section-three  {
+        .img-section-three {
+            position: absolute;
+            right: 250px;
+            bottom: -100px;
+        }
+        .btn-primary    {
+            margin: 18px;
+        }
+    }
+}
 
-// секция 3 финиш
+// section 3
 
-// секция 4 старт
+// section 4
 
 .section-four {
+    position: relative;
     padding-top: 207px;
     padding-bottom: 199px;
+    overflow: hidden;
+    .map    {
+        position: absolute;
+        right: -5%;
+    }
     h2 {
         margin-bottom: 64px;
     }
@@ -155,6 +226,7 @@ header {
     }
     h6 {
         margin-bottom: 31px;
+        font-weight: 700;
     }
     .partner-icon {
         margin-right: 31px;
@@ -163,10 +235,48 @@ header {
         }
     }
 }
+@media(min-width: 992px)    {
+    .section-four   {
+        .map    {
+            width: 65%;
+            height: 50%;
+            top: 25%;
+            right: -7%;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        .partner-icon   {
+            width: 25%;
+        }
+    }
+    }
 
-// секция 4 финиш
+@media(min-width: 1440px)   {
+    .section-four   {
+        .map    {
+            position: absolute;
+            right: 5%;
+            width: 50%;
+            height: 50%;
+        }
+        h2 {
+            font-size: 42px;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 68px;
+        }
+    }
+}
 
-// секция 5
+// section 4
+
+// section 5
 
 .section-five {
     padding-top: 142px;
@@ -181,6 +291,7 @@ header {
         color: #8c8f94;
         margin-bottom: 46px;
         letter-spacing: 3px;
+        font-weight: 700;
     }
     .interface {
         text-align: center;
@@ -193,9 +304,9 @@ header {
     }
 }
 
-// секция 5
+// section 5
 
-// секция 6
+// section 6
 
 .section-six {
     padding-top: 76px;
@@ -212,6 +323,7 @@ header {
         color: #3a3d4b;
         letter-spacing: 3px;
         margin-bottom: 37px;
+        font-weight: 400;
     }
     span {
         margin-bottom: 67px;
@@ -232,9 +344,9 @@ header {
         }
     }
 }
-// секция 6 конец
+// section 6
 
-// секция 7 старт
+// section 7
 
 .section-seven {
     padding-top: 119px;
@@ -275,6 +387,10 @@ header {
             border-color: transparent;
             .slick-track {
                 .slick-slide {
+                    opacity: 0.5;
+                    &.slick-active  {
+                        opacity: 1;
+                    }
                     &:focus {
                         outline: none;
                     }
@@ -288,12 +404,14 @@ header {
     .text-slider {
         h5 {
             margin-bottom: 48px;
+            font-weight: 300;
         }
         p  {
             margin-bottom: 29px;
         }
         h6 {
             margin-top: 68px;
+            font-weight: 700;
         }
         .slick-list {
             text-align: -webkit-center;
@@ -303,93 +421,18 @@ header {
                 }
             }
         }
+        .description    {
+            .stars {
+                .y-star    {
+                    color: #F2BC3B;
+                }
+            }
+        }
     }
 }
-// секция 7 конец
 
-// секция 8 старт
 
-// .section-eight  {
-//     padding-top: 159px;
-//     padding-bottom: 193px;
-//     background-color: #F4F4F5;
-//     h2 {
-//         color: #26272D;
-//         margin-bottom: 67px;
-//     }
-//     h6 {
-//         font-weight: 600;
-//         margin-bottom: 23px;
-//     }
-//     p {
-//         margin-bottom: 44px;
-//         &.link  {
-//             margin-bottom: 0;
-//         }
-//     }
-//     .toggle {
-//         display: inline-block;
-//         box-sizing: content-box;
-//         text-align: center;
-//         padding: 20px 20px 20px 20px;
-//         width: 50%;
-//         border: 1px solid black;
-//         border-radius: 50px;
-//         a {
-//             font-size: 16px;
-//             margin-right: 10px;
-//             color: 	#DCDCDC;
-//             &:active    {
-//                 color: #000000;
-//                 background-color: #FFFFFF;
-//                 padding: 20px 36px 16px 36px;
-//                 border-radius: 50px;
-//             }
-//             &:last-child    {
-//                 margin-right: 0;
-//             }
-//             &:hover {
-//                 text-decoration: none;
-//             }
-//         }
-//     }
-//     .starter  {
-//         position: relative;
-//         text-align: center;
-//         background-color: #FFFFFF;
-//         width: 350px;
-//         .starter-in {
-//             padding-top: 63px;
-//             padding-bottom: 70px;
-//             h4 {
-//                 margin-bottom: 38px;
-//             }
-//             p {
-//                 margin-bottom: 47px;
-//             }
-//             .btn    {
-//                 margin-top: 61px;
-//             }
-//         }
-//     }
-//     .pro  {
-//         position: relative;
-//         left: 65px;
-//         text-align: center;
-//         padding-top: 50px;
-//         width: 350px;
-//         .pro-in {
-//             background-color: #EBEBED;
-//         }
-//     }
-//     .price  {
-//         margin-bottom: 56px;
-//     }
-//     .check  {
-//         font-size: 16px;
-//         margin-bottom: 27px;
-//     }
-// }
+
 
 .section-eight  {
     padding-top: 159px;
@@ -400,7 +443,7 @@ header {
         margin-bottom: 67px;
     }
     h6 {
-        font-weight: 600;
+        font-weight: 700;
         margin-bottom: 23px;
     }
     p {
@@ -410,12 +453,12 @@ header {
         }
     }
     .toggle {
+        display: inline-flex;
         box-sizing: content-box;
         text-align: center;
-        padding: 20px 20px 20px 20px;
-        width: 60%;
         border: 1px solid black;
         border-radius: 50px;
+        margin-bottom: 77px;
         a {
             margin-right: 10px;
             &:last-child    {
@@ -423,19 +466,24 @@ header {
             }
         }
         .nav-item {
+            padding: 12px 5px 18px 5px;
+            &:last-child    {
+                margin-left: auto;
+            }
             .nav-link   {
                 display: inline;
                 font-size: 16px;
                 color: 	#DCDCDC;
                 &:hover {
-                    border: transparent;
+                    border-color: transparent;
                 }
                 &.active    {
                     color: #000000;
                     background-color: #FFFFFF;
-                    padding: 20px 36px 16px 36px;
+                    padding: 15px 40px;
                     border: none;
                     border-radius: 50px;
+                    box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.2);
                 }
                 &:hover {
                     text-decoration: none;
@@ -468,10 +516,11 @@ header {
         }
     }
     .pro  {
-        position: relative;
+        position: inherit;
         left: 65px;
         text-align: center;
         padding-top: 20px;
+        padding-bottom: 20px;
         width: 350px;
         .pro-in {
             background-color: #EBEBED;
@@ -483,6 +532,7 @@ header {
             }
             p {
                 margin-bottom: 30px;
+                font-size: 16px;
             }
         }
     }
@@ -492,6 +542,43 @@ header {
     .check  {
         font-size: 16px;
         margin-bottom: 27px;
+    }
+}
+@media(min-width: 992px)    {
+    .section-eight  {
+        .starter    {
+            width: 280px;
+        }
+        .pro    {
+            position: inherit;
+            width: 280px;
+            left: 0;
+            .pro-in {
+                .btn    {
+                    width: 60%;
+                }
+            }
+        }
+    }
+    .check  {
+        font-size: 16px;
+    }
+}
+@media(min-width: 1920px)   {
+    .section-eight  {
+        .starter    {
+            width: 340px;
+        }
+        .pro    {
+            position: inherit;
+            width: 340px;
+            left: 55px;
+            .pro-in {
+                .btn    {
+                    width: 60%;
+                }
+            }
+        }
     }
 }
 
@@ -510,7 +597,7 @@ header {
         border-radius: 50px;
         input {
             margin-left: 20px;
-            margin-right: 70px;
+            margin-right: 90px;
             border: none;
             background-color: transparent;
             &:focus {
@@ -525,6 +612,7 @@ header {
         font-size: 14px;
         text-align: center;
         margin: 0;
+        font-weight: 400;
     }
 }
 
@@ -537,12 +625,13 @@ header {
     h6 {
         font-size: 14px;
         margin-bottom: 34px;
+        font-weight: 700;
     }
     .links-line {
         margin-top: 40px;
         .icon {
             display: inline-block;
-            margin-right: 25px;
+            margin-right: 15px;
         }
         a {
             text-decoration: none;

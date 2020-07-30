@@ -6,11 +6,14 @@ console.log('webpack starterkit');
 
 $(document).ready(function ($) {
     $('.slider').slick({
+        infinite: true,
         asNavFor: '.text-slider',
-        autoplay: true,
+        autoplay: false,
         arrows: true,
-        centerMode: true,
-        slidesToShow: 1,
+        centerMode: false,
+        centerPadding: '60px',
+        slidesToScroll: 1,
+        slidesToShow: 3,
         // nextArrow: '<div class="slider">',
         // prevArrow: '<div class="slider">'
     });
