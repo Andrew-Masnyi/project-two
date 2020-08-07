@@ -167,7 +167,7 @@ header {
 @media(min-width: 1920px)   {
     .section-one    {
         .img-section-one    {
-            margin-top: 27%;
+            margin-top: 5%;
         }
     }
 }
@@ -444,6 +444,17 @@ header {
         }
     }
 }
+@media(min-width: 1200px)   {
+    .section-four   {
+        .map    {
+            position: absolute;
+            top: 25%;
+            right: 2%;
+            width: 55%;
+            height: 50%;
+        }
+    }
+}
 
 @media(min-width: 1440px)   {
     .section-four   {
@@ -459,6 +470,13 @@ header {
         p {
             font-size: 20px;
             margin-bottom: 68px;
+        }
+    }
+}
+@media(min-width: 1900px)   {
+    .section-four   {
+        .map    {
+            height: 60%;
         }
     }
 }
@@ -602,9 +620,11 @@ header {
             border-color: transparent;
             .slick-track {
                 .slick-slide {
-                    opacity: 0.5;
                     &.slick-active  {
+                        opacity: 0.5;
+                    &.slick-center  {
                         opacity: 1;
+                    }
                     }
                     &:focus {
                         outline: none;
@@ -972,6 +992,13 @@ header {
         font-size: 16px;
     }
 }
+@media(min-width: 1200px)   {
+    .section-eight  {
+        .pro    {
+            left: -44px;
+        }
+    }
+}
 @media(min-width: 1920px)   {
     .section-eight  {
         .starter    {
@@ -1112,6 +1139,9 @@ header {
     .section-ten    {
         padding-top: 30px;
         padding-bottom: 40px;
+        .links-line {
+            margin-bottom: 20px;
+        }
     }
 }
 

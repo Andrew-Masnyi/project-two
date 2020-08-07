@@ -10,7 +10,7 @@ $(document).ready(function ($) {
         asNavFor: '.text-slider',
         autoplay: false,
         arrows: true,
-        centerMode: false,
+        centerMode: true,
         centerPadding: '60px',
         slidesToScroll: 1,
         slidesToShow: 3,
