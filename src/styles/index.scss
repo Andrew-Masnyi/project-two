@@ -620,11 +620,10 @@ header {
             border-color: transparent;
             .slick-track {
                 .slick-slide {
-                    &.slick-active  {
-                        opacity: 0.5;
+                    text-align: center;
+                    opacity: 0.5;
                     &.slick-center  {
                         opacity: 1;
-                    }
                     }
                     &:focus {
                         outline: none;
@@ -714,8 +713,9 @@ header {
                 border-color: transparent;
                 .slick-track {
                     .slick-slide {
+                        text-align: center;
                         opacity: 0.5;
-                        &.slick-active  {
+                        &.slick-center  {
                             opacity: 1;
                         }
                         &:focus {
@@ -723,6 +723,7 @@ header {
                         }
                         img {
                             border-radius: 70px;
+                            display: inline-block;
                         }
                     }
                 }

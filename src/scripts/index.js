@@ -11,9 +11,9 @@ $(document).ready(function ($) {
         autoplay: false,
         arrows: true,
         centerMode: true,
-        centerPadding: '60px',
+        // centerPadding: '60px',
         slidesToScroll: 1,
-        slidesToShow: 3,
+        slidesToShow: 1,
         // nextArrow: '<div class="slider">',
         // prevArrow: '<div class="slider">'
     });
