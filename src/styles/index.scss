@@ -597,6 +597,7 @@ header {
             border: none;
         }
         .slick-prev {
+            display: none;
             position: relative;
             top: 100px;
             right: 130px;
@@ -607,9 +608,10 @@ header {
 
         }
         .slick-next {
+            display: none;
             position: relative;
             bottom: 90px;
-            left: 500px;
+            left: 700px;
             background-image: url(../../img/right-arrow.png);
             &:focus    {
                 outline: none;
@@ -621,15 +623,19 @@ header {
             .slick-track {
                 .slick-slide {
                     text-align: center;
-                    opacity: 0.5;
+                    opacity: 1;
                     &.slick-center  {
                         opacity: 1;
+                    }
+                    &.slick-current {
+                        transform: scale(1);
                     }
                     &:focus {
                         outline: none;
                     }
                     img {
                         border-radius: 70px;
+                        display: inline-block;
                     }
                 }
             }
@@ -664,11 +670,24 @@ header {
         }
     }
 }
-@media(min-width: 768px)    {
+@media(min-width: 1200px)   {
     .section-seven  {
         .slider {
+            .slick-list {
+                .slick-track    {
+                    .slick-slide    {
+                    transition: ease transform 0.5s;
+                    transform: scale(0.5);
+                    opacity: 0.5;
+                    }
+                }
+            }
             .slick-next {
-                left: 320px;
+                left: 660px;
+                display: block;
+            }
+            .slick-prev {
+                display: block;
             }
         }
     }
@@ -702,7 +721,7 @@ header {
             .slick-next {
                 position: relative;
                 bottom: 90px;
-                left: 500px;
+                left: 700px;
                 background-image: url(../../img/right-arrow.png);
                 &:focus    {
                     outline: none;

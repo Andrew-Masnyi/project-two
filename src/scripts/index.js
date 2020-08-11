@@ -6,16 +6,26 @@ console.log('webpack starterkit');
 
 $(document).ready(function ($) {
     $('.slider').slick({
-        infinite: true,
+        infinite: false,
         asNavFor: '.text-slider',
         autoplay: false,
         arrows: true,
         centerMode: true,
-        // centerPadding: '60px',
+        centerPadding: '200px',
         slidesToScroll: 1,
         slidesToShow: 1,
-        // nextArrow: '<div class="slider">',
-        // prevArrow: '<div class="slider">'
+        initialSlide: 1,
+        responsive: [
+            {
+                breakpoint:  993,
+                settings:   {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                    arrows: false,
+                }
+            }
+        ]
     });
 });
 
@@ -23,5 +33,7 @@ $(document).ready(function(){
     $('.text-slider').slick({
         asNavFor: '.slider',
         arrows: false,
+        infinite: false,
+        initialSlide: 1,
     });
   });
