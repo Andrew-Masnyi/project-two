@@ -169,14 +169,11 @@ header {
     .font-icon {
         margin-right: 15px;
     }
-    .buttton-section-one {
+    .button-section-one {
         text-align: center;
     }
     .iphone {
         text-align: center;
-    }
-    .img-section-one {
-        margin-top: 290px;
     }
 }
 @media(min-width: 576px)    {
@@ -596,18 +593,22 @@ header {
     }
     span {
         margin-bottom: 67px;
-        p {
-            border: solid;
-            border-width: 1px;
-            border-radius: 35px;
-            border-color: #e8e8e8;
-            padding: 8px 4px 8px 28px;
-            margin-bottom: 0;
+        border: 1px solid black;
+        border-radius: 35px;
+        border-color: #e8e8e8;
+        input {
+            font-size: 14px;
+            border: none;
+            background-color: transparent;
+            &:focus {
+                outline: none;
+            }
         }
     }
     .btn {
-        margin-left: 132px;
-        padding: 15px 24px 15px 32px;
+        margin-left: -30px;
+        padding: 5px 20px 5px 12px;
+        font-size: 14px;
         .fa-arrow-right {
             margin-left: 17px;
         }
@@ -621,12 +622,12 @@ header {
 @media(min-width: 320px)    {
     .section-six    {
         span {
-            p {
+            input {
                 padding: 8px 4px 8px 8px;
             }
         }
         .btn    {
-            margin-left: 30px;
+            margin-left: -20px;
             padding: 5px;
             .fa-arrow-right {
                 margin-left: 0;
@@ -637,13 +638,13 @@ header {
 @media(min-width: 576px)    {
     .section-six    {
         span {
-            p {
+            input {
                 padding-left: 28px;
             }
         }
         .btn    {
             margin-left: 30px;
-            padding: 15px 40px 15px 32px;
+            padding: 5px 20px 5px 12px;
             .fa-arrow-right {
                 margin-left: 15px;
             }
