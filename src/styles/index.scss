@@ -60,12 +60,21 @@ p {
 
 
 header {
+    font-size: 16px;
     .navbar {
+        .navbar-brand   {
+            margin-left: 50px;
+        }
+        .container  {
+            width: 90%;
+        }
         background-color: #ffffff;
         padding: 20px 0 20px 0;
         .navbar-collapse    {
             .navbar-nav {
                 .nav-item   {
+                    margin-left: 15px;
+                    margin-right: 15px;
                     .nav-link   {
                         color: #26272D;
                         &.help  {
@@ -87,13 +96,48 @@ header {
         }
     }
 }
-@media(min-width:992px) {
+@media(min-width: 576px)    {
     header  {
         .navbar {
+            .navbar-brand   {
+                margin-left: 150px;
+            }
+        }
+    }
+}
+@media(min-width: 768px)    {
+    header  {
+        .navbar {
+            .navbar-brand   {
+                margin-left: 240px;
+            }
+        }
+    }
+}
+@media(min-width: 992px) {
+    header  {
+        .navbar {
+            .container  {
+                width: auto;
+            }
             .navbar-collapse    {
                 .navbar-nav {
                     .logo   {
-                        margin-left: 150px;
+                        margin-left: 60px;
+                        margin-right: 55px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 1200px)   {
+    header  {
+        .navbar {
+            .navbar-collapse    {
+                .navbar-nav     {
+                    .logo   {
+                        margin-left: 130px;
                         margin-right: 125px;
                     }
                 }
@@ -112,11 +156,15 @@ header {
     background-repeat: no-repeat;
     p {
         text-align: center;
+        margin-bottom: 60px;
     }
     .btn-outline-light {
-        padding: 19px 48px;
+        padding: 15px 48px;
         margin-top: 61px;
         margin-bottom: 55px;
+        &:hover {
+            border: 1px solid black;
+        }
     }
     .font-icon {
         margin-right: 15px;
@@ -135,7 +183,7 @@ header {
     .section-one    {
         .img-section-one    {
             width: 50%;
-            margin-top: -30px;
+            margin-top: 50px;
         }
     }
 }
@@ -167,7 +215,8 @@ header {
 @media(min-width: 1920px)   {
     .section-one    {
         .img-section-one    {
-            margin-top: 5%;
+            margin-top: 10%;
+            width: 35%;
         }
     }
 }
@@ -214,7 +263,7 @@ header {
 // section 3
 
 .section-three {
-    padding-top: 87px;
+    padding-top: 187px;
     padding-bottom: 43px;
     h2 {
         margin-bottom: 60px;
@@ -245,8 +294,8 @@ header {
         padding-bottom: 30px;
         .img-section-three  {
             position: relative;
-            width: 270px;
-            right: 10px;
+            width: 300px;
+            right: 0px;
             margin-top: 10px;
         }
         .btn-primary    {
@@ -327,12 +376,13 @@ header {
     .section-three  {
         .img-section-three {
             position: absolute;
-            right: 110px;
-            bottom: -100px;
-            width: 930px;
+            right: 50px;
+            top: -230px;
+            width: 800px;
+            height: 800px;
         }
         .btn-primary    {
-            margin: 18px;
+            margin: 18px 18px 18px 0;
         }
     }
 }
@@ -343,15 +393,15 @@ header {
 
 .section-four {
     position: relative;
-    padding-top: 207px;
-    padding-bottom: 199px;
+    padding-top: 407px;
+    padding-bottom: 260px;
     overflow: hidden;
     .map    {
         position: absolute;
         right: -5%;
     }
     h2 {
-        margin-bottom: 64px;
+        margin-bottom: 30px;
     }
     p {
         margin-bottom: 68px;
@@ -379,9 +429,9 @@ header {
         }
         .map    {
             position: absolute;
-            top: 80%;
-            right: 3%;
-            width: 300px;
+            top: 72%;
+            right: -2%;
+            width: 350px;
         }
     }
 }
@@ -426,6 +476,7 @@ header {
 }
 @media(min-width: 992px)    {
     .section-four   {
+        padding-top: 200px;
         .map    {
             width: 65%;
             height: 50%;
@@ -434,6 +485,7 @@ header {
         }
         h2 {
             font-size: 32px;
+            margin-bottom: 64px;
         }
         p {
             font-size: 16px;
@@ -560,6 +612,11 @@ header {
             margin-left: 17px;
         }
     }
+    a {
+        img {
+            border-radius: 30px;
+        }
+    }
 }
 @media(min-width: 320px)    {
     .section-six    {
@@ -573,6 +630,22 @@ header {
             padding: 5px;
             .fa-arrow-right {
                 margin-left: 0;
+            }
+        }
+    }
+}
+@media(min-width: 576px)    {
+    .section-six    {
+        span {
+            p {
+                padding-left: 28px;
+            }
+        }
+        .btn    {
+            margin-left: 30px;
+            padding: 15px 40px 15px 32px;
+            .fa-arrow-right {
+                margin-left: 15px;
             }
         }
     }
@@ -652,6 +725,7 @@ header {
         h6 {
             margin-top: 68px;
             font-weight: 700;
+            text-transform: uppercase;
         }
         .slick-list {
             text-align: -webkit-center;
@@ -663,6 +737,12 @@ header {
         }
         .description    {
             .stars {
+                .fa-star    {
+                    margin-right: 10px;
+                    &:last-child    {
+                        margin-right: 0;
+                    }
+                }
                 .y-star    {
                     color: #F2BC3B;
                 }
@@ -793,6 +873,7 @@ header {
     h6 {
         font-weight: 700;
         margin-bottom: 23px;
+        text-transform: uppercase;
     }
     p {
         margin-bottom: 44px;
@@ -804,7 +885,7 @@ header {
         display: inline-flex;
         box-sizing: content-box;
         text-align: center;
-        border: 1px solid black;
+        border: 1px solid	#C8C8C8;
         border-radius: 50px;
         margin-bottom: 77px;
         a {
@@ -831,7 +912,7 @@ header {
                     padding: 15px 40px;
                     border: none;
                     border-radius: 50px;
-                    box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.2);
+                    box-shadow: 0px 6px 42px -9px rgba(0,0,0,0.38);
                 }
                 &:hover {
                     text-decoration: none;
@@ -1101,8 +1182,12 @@ header {
 @media(min-width: 768px)    {
     .section-nine   {
         .input-group    {
+            width: 60%;
+            input  {
+                text-align: start;
+            }
             .btn    {
-                margin-left: 300px;
+                margin-left: 20px;
             }
         }
     }
@@ -1110,9 +1195,7 @@ header {
 @media(min-width: 992px)    {
     .section-nine   {
         .input-group    {
-            input {
-                width: 60%;
-            }
+            width: 55%;
             .btn    {
                 margin-left: 220px;
             }
@@ -1123,13 +1206,9 @@ header {
 
 
 .section-ten    {
+    font-size: 14px;
     padding-top: 90px;
     padding-bottom: 130px;
-    h6 {
-        font-size: 14px;
-        margin-bottom: 34px;
-        font-weight: 700;
-    }
     .links-line {
         margin-top: 40px;
         .icon {
@@ -1140,6 +1219,9 @@ header {
             text-decoration: none;
         }
     }
+    .logo   {
+        margin-bottom: 15px;
+    }
     .list {
         display: flex;
         justify-content:space-around;
@@ -1148,6 +1230,7 @@ header {
         h6 {
             margin-bottom: 26px;
             font-size: 10px;
+            text-transform: uppercase;
         }
         a {
             color: #8C8F94;
@@ -1162,6 +1245,11 @@ header {
         .links-line {
             margin-bottom: 20px;
         }
+        .list   {
+            a {
+                font-size: 11px;
+            }
+        }
     }
 }
 
@@ -1174,12 +1262,24 @@ footer  {
             font-size: 14px;
         }
     }
+    .love   {
+        text-transform: uppercase;
+    }
     .logo-link  {
         text-align: end;
         p {
             font-size: 9px;
             img {
                 margin-left: 10px;
+            }
+        }
+    }
+}
+@media(min-width: 320px)    {
+    footer {
+        .logo-link  {
+            p {
+                text-align: center;
             }
         }
     }
