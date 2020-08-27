@@ -62,8 +62,11 @@ p {
 header {
     font-size: 16px;
     .navbar {
+        .navbar-toggler {
+            margin-left: 10px;
+        }
         .navbar-brand   {
-            margin-left: 50px;
+            margin-right: 30px;
         }
         .container  {
             width: 90%;
@@ -100,7 +103,7 @@ header {
     header  {
         .navbar {
             .navbar-brand   {
-                margin-left: 150px;
+                margin-right: 210px;
             }
         }
     }
@@ -109,7 +112,7 @@ header {
     header  {
         .navbar {
             .navbar-brand   {
-                margin-left: 240px;
+                margin-right: 310px;
             }
         }
     }
