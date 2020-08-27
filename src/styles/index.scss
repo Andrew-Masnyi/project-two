@@ -176,6 +176,16 @@ header {
         text-align: center;
     }
 }
+@media(min-width: 375px)    {
+    .section-one    {
+        .btn-outline-light  {
+            margin-top: 0;
+        }
+        .img-section-one    {
+            width: 250px;
+        }
+    }
+}
 @media(min-width: 576px)    {
     .section-one    {
         .img-section-one    {
@@ -452,6 +462,13 @@ header {
         }
     }
 }
+@media(min-width: 375px)    {
+    .section-four   {
+        .map    {
+            right: 3%;
+        }
+    }
+}
 @media(min-width: 576px)    {
     .section-four   {
         padding-top: 50px;
@@ -587,6 +604,20 @@ header {
         .interface-img  {
             height: 510px;
             margin: 0;
+        }
+    }
+}
+@media(min-width: 992px)    {
+    .section-five   {
+        .interface-img  {
+            width: 150px;
+        }
+    }
+}
+@media(min-width: 1900px)    {
+    .section-five   {
+        .interface-img  {
+            width: auto;
         }
     }
 }
@@ -1001,10 +1032,10 @@ header {
         padding-top: 60px;
         padding-bottom: 60px;
         .starter    {
-            width: 150px;
+            width: auto;
             .starter-in {
                 .btn    {
-                    width: 100%;
+                    width: 50%;
                 }
                 h4 {
                     font-size: 20px;
@@ -1012,11 +1043,11 @@ header {
             }
         }
         .pro    {
-            width: 150px;
-            left: -8px;
+            width: auto;
+            left: 0;
             .pro-in {
                 .btn    {
-                    width: 100%;
+                    width: 50%;
                     margin-top: 13px;
                 }
                 h4 {
@@ -1033,7 +1064,7 @@ header {
 @media(min-width: 576px)    {
     .section-eight  {
         .starter    {
-            width: 220px;
+            width: 260px;
             .starter-in {
                 .btn    {
                     width: 60%;
@@ -1042,9 +1073,9 @@ header {
             }
         }
         .pro    {
-            width: 220px;
+            width: 260px;
             padding-top: 30px;
-            left: -48px;
+            left: -10px;
             .pro-in {
                 .btn    {
                     width: 60%;
@@ -1183,11 +1214,20 @@ header {
             width: 100%;
             input {
                 margin: 0;
-                text-align: center;
+                text-align: start;
             }
             .btn    {
-                margin-left: 80px;
+                margin-left: -40px;
                 padding: 3px;
+            }
+        }
+    }
+}
+@media(min-width: 375px)    {
+    .section-nine   {
+        .input-group    {
+            .btn    {
+                margin-left: 16px;
             }
         }
     }
@@ -1309,6 +1349,11 @@ footer  {
 }
 @media(min-width: 320px)    {
     footer {
+        .site   {
+            p {
+                text-align: center;
+            }
+        }
         .logo-link  {
             p {
                 text-align: center;
